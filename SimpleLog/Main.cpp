@@ -11,8 +11,9 @@ string writelog;
 
 float calCircleArea(float r)
 {
-
-	return 3.14* r* r;
+	float PI=3.14;
+	assert(PI == 3.14);
+	return PI* r* r;
 
 }
 
@@ -22,9 +23,11 @@ float calSquareArea(float w)
 	REQUIRED(w < 100000);
 
 	float area = 0.0f;
+	 
 	if (w > 0)
 		area = w * w;
 	PROMISED(area >= 0);
+
 
 	return area;
 
@@ -49,7 +52,7 @@ int main(int argc, char* argv[])
 	//1 faile
 
 
-	cout<< endl <<"File: " << __FILE__ <<endl<< "Function: " << __FUNCTION__ << endl<< "Line:"  <<__LINE__;
+	//cout<< endl <<"File: " << __FILE__ <<endl<< "Function: " << __FUNCTION__ << endl<< "Line:"  <<__LINE__;
 
 	
 	 
